@@ -1,8 +1,8 @@
-# BusyRebar: Wireless BUSY Bar Repeater
+# Busy ReBar: Wireless BUSY Bar Repeater
 
 ![BusyRebar Hero Image](images/BUSY_hero.png)
 
-**BusyRebar** (BUSY Bar REpeater) is a wireless, real-time LED matrix repeater for the Flipper Devices BUSY Bar. 
+**Busy ReBar** (BUSY Bar REpeater) is a wireless, real-time LED matrix repeater for the Flipper Devices BUSY Bar. 
 
 The goal of this project is to accommodate situations where you cannot easily place the main color screen of the BUSY Bar facing visitors or colleagues. This often happens if turning the bar outward makes it inconvenient for you to control the buttons and read the secondary screen, if your monitors are oriented perpendicular to the direction you want the status shown, or if you need people to see your status from entirely outside the room.
 
