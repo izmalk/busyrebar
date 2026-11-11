@@ -7,6 +7,12 @@ WIFI_SSID = "<YOUR_2.4GHZ_WIFI_SSID>"
 WIFI_PASSWORD = "<YOUR_WIFI_PASSWORD>"
 UDP_PORT = 4048
 
+# Static network configuration (must match PANEL_IP in repeater.py)
+STATIC_IP = "192.168.1.3"
+SUBNET_MASK = "255.255.255.0"
+GATEWAY = "192.168.1.1"
+DNS_SERVER = "8.8.8.8"
+
 i75 = Interstate75(display=DISPLAY_INTERSTATE75_64X32)
 graphics = i75.display
 width, height = i75.width, i75.height
@@ -33,7 +39,7 @@ except Exception:
     pass
 
 # Force Static IP (IP, Subnet Mask, Gateway, DNS)
-wlan.ifconfig(('192.168.1.231', '255.255.255.0', '192.168.1.1', '8.8.8.8'))
+wlan.ifconfig((STATIC_IP, SUBNET_MASK, GATEWAY, DNS_SERVER))
 wlan.connect(WIFI_SSID, WIFI_PASSWORD)
 
 while not wlan.isconnected():

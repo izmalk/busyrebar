@@ -60,7 +60,7 @@ Found at the top of `main.py`:
 
 * `WIFI_SSID` / `WIFI_PASSWORD`: Your 2.4GHz Wi-Fi network credentials.
 * `UDP_PORT`: Port to listen on (Default `4048`).
-* `wlan.ifconfig(...)`: **Crucial for stability.** Hardcode your desired Static IP here to bypass router DHCP assignment delays. Alternatrively, make sure to setup Static DHCP on your router.
+* `STATIC_IP` / `SUBNET_MASK` / `GATEWAY` / `DNS_SERVER`: **Crucial for stability.** Static network configuration for the receiver. `STATIC_IP` must match `PANEL_IP` in `repeater.py` (Default `192.168.1.3`). This bypasses router DHCP assignment delays. Alternatively, make sure to setup Static DHCP on your router.
 
 ### Linux Bridge Config (`repeater.py`)
 
